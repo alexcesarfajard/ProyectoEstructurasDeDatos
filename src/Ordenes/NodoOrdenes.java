@@ -10,4 +10,35 @@ package Ordenes;
  */
 public class NodoOrdenes {
     
+    private String dato;
+    private NodoOrdenes atras;
+    
+    public NodoOrdenes(String dato){
+        this.dato = dato;
+    }
+    
+    public NodoOrdenes(){
+    }
+
+    public String getDato() {
+        return dato;
+    }
+
+    public void setDato(String dato) {
+        this.dato = dato;
+    }
+
+    public NodoOrdenes getAtras() {
+        return atras;
+    }
+
+    public void setAtras(NodoOrdenes atras) {
+        this.atras = atras;
+    }
+
+    @Override
+    public String toString() {
+        return dato;
+    }
+    
 }
