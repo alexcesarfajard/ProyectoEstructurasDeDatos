@@ -35,13 +35,13 @@ public class ProyectoEstructurasDeDatos {
         colaordenes.encola(new NodoOrdenes("Andres Jose"));
         
         // se muestra a los clientes en la cola 
-        System.out.println("\nPersonas en cola\n" + colaordenes.toString());
+        System.out.println("\nClientes en cola:\n" + colaordenes.toString());
         
         //se atiende a la siguiente persona en la cola
-        System.out.println("\nSe antiende a la siguiente persona " + colaordenes.atiende());
+        System.out.println("\nSe antiende al siguiente cliente: " + colaordenes.atiende());
         
         // se muestra a las personas que quedan en la cola
-        System.out.println("\nPersonas en cola\n" + colaordenes.toString());
+        System.out.println("\nClientes en cola:\n" + colaordenes.toString());
         
         
     }
