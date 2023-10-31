@@ -35,25 +35,44 @@ public class ListaPlatillos {
             }
         }
     }
+    
+    //Impresion sin Recursiva
 
-    public String toString() {
-        String resp = "Lista circular\n\n";
+//    public String toString() {
+//        String resp = "Lista circular\n\n";
+//
+//        NodoPlatillos aux = cabeza;
+//
+//        if (aux != null) {
+//            resp += aux.toString() + "\n";
+//            aux = aux.getNext();
+//
+//            while (aux != cabeza) {
+//                resp += aux.toString() + "\n";
+//                aux = aux.getNext();
+//            }
+//        } else {
+//            resp += "La lista está vacía";
+//        }
+//        
+//        return resp;
+//    }
+    
+    //Impresion con Recursiva
+    public String mostrarPlatillos() {
+        return "Lista circular\n\n" + mostrarPlatillosRecursiva(cabeza, "");
+    }
 
-        NodoPlatillos aux = cabeza;
-
-        if (aux != null) {
-            resp += aux.toString() + "\n";
-            aux = aux.getNext();
-
-            while (aux != cabeza) {
-                resp += aux.toString() + "\n";
-                aux = aux.getNext();
-            }
-        } else {
-            resp += "La lista está vacía";
+    private String mostrarPlatillosRecursiva(NodoPlatillos temp, String respuesta) {
+        if (temp == null) {
+            return "La lista está vacía";
         }
-        
-        return resp;
+        respuesta += temp.toString() + "\n";
+        if (temp.getNext() != cabeza) {
+            return mostrarPlatillosRecursiva(temp.getNext(), respuesta);
+        }
+
+        return respuesta;
     }
 
 }

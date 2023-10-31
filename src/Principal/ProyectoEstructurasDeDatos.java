@@ -18,7 +18,7 @@ public class ProyectoEstructurasDeDatos {
         listplatillos.insertaPlatillo(new Platillos(0, "Arroz con pollo", 3000, 4000));
         listplatillos.insertaPlatillo(new Platillos(1, "La carnita roja", 4000, 6000));
         
-        System.out.println(listplatillos.toString());
+        System.out.println(listplatillos.mostrarPlatillos());
         
 
         PilaEmpleados pilaEmpleado = new PilaEmpleados();

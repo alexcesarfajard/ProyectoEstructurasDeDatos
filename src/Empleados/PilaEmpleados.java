@@ -42,21 +42,43 @@ public class PilaEmpleados {
         }
     }
 
+    //Impresion sin Recursiva
+//    public String mostrarEmpleados() {
+//        String respuesta = "Pila:\n\n";
+//
+//        if (!esVacia()) {
+//            NodoEmpleados temp = primero;
+//            while (temp != null) {
+//                respuesta += temp.getDato() + "\n";
+//                temp = temp.getSiguiente();
+//            }
+//        } else {
+//            respuesta = "La pila esta vacia";
+//        }
+//        return respuesta;
+//    }
+    
+    
+    //Impresion con Recursiva
     public String mostrarEmpleados() {
-        String respuesta = "Pila:\n\n";
-
-        if (!esVacia()) {
-            NodoEmpleados temp = primero;
-            while (temp != null) {
-                respuesta += temp.getDato() + "\n";
-                temp = temp.getSiguiente();
-            }
-        } else {
-            respuesta = "La pila esta vacia";
-        }
-        return respuesta;
+        return "Pila:\n\n" + mostrarEmpleadosRecursiva(primero);
     }
 
+    public String mostrarEmpleadosRecursiva(NodoEmpleados temp) {
 
+        String respuesta = "";
+
+        if (temp == null) {
+            return "La pila esta vacia";
+        } else {
+            respuesta = temp.getDato() + "\n";
+            if (temp.getSiguiente() != null) {
+                return respuesta + mostrarEmpleadosRecursiva(temp.getSiguiente());
+            } else {
+                return respuesta;
+            }
+        }
+
+    }
 
 }
