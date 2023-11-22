@@ -1,7 +1,7 @@
 package Principal;
 
-import OrganizacionPlatillosEmpleados.ArbolOrgEmpleados;
-import OrganizacionPlatillosEmpleados.ArbolOrgPlatillos;
+import OrganizacionPlatillosEmpleados.*;
+import OrganizacionPlatillosEmpleados.*;
 import Empleados.*;
 import Platillos.*;
 import Ordenes.*;
