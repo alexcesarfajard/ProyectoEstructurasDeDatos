@@ -58,7 +58,6 @@ public class PilaEmpleados {
 //        return respuesta;
 //    }
     
-    
     //Impresion con Recursiva
     public String mostrarEmpleados() {
         return "Pila:\n\n" + mostrarEmpleadosRecursiva(primero);
@@ -78,7 +77,5 @@ public class PilaEmpleados {
                 return respuesta;
             }
         }
-
     }
-
 }
