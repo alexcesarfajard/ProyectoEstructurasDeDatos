@@ -4,5 +4,4 @@ Grupo # 3
 Integrantes:
 Alex Cesar Fajardo
 Harlyn Josue Luna Brenes 
-Jimena Avila Chaves
-Manuel Mora Villalobos
+
