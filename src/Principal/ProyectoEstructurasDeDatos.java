@@ -1,11 +1,11 @@
 package Principal;
 
 import OrganizacionPlatillosEmpleados.*;
-import OrganizacionPlatillosEmpleados.*;
 import Empleados.*;
 import Platillos.*;
 import Ordenes.*;
 import ManejoOrdenes.*;
+import Balances.*;
 
 public class ProyectoEstructurasDeDatos {
 
@@ -18,7 +18,6 @@ public class ProyectoEstructurasDeDatos {
         ArbolOrgPlatillos orgplatillos = new ArbolOrgPlatillos();
         ArbolOrgEmpleados orgempleados = new ArbolOrgEmpleados();
 
-        
         listplatillos.insertaPlatillo(new Platillos(0, "Arroz con pollo", 3000, 4000));
         listplatillos.insertaPlatillo(new Platillos(1, "La carnita roja", 4000, 6000));
 
@@ -48,8 +47,7 @@ public class ProyectoEstructurasDeDatos {
         listaDoble.inserta(new ListaOrdenes(1, "Luis Calderon", "Carne Roja", (6000 * 0.1) + 6000));
         //Se muestra lista Circular
         System.out.println(listaDoble.toString());
-        
-         
+
         //Organizacion de platillos 
         orgplatillos.insertar(10, "Hamburguesa", 2);
         orgplatillos.insertar(9, "Pinto", 1);
@@ -66,8 +64,7 @@ public class ProyectoEstructurasDeDatos {
 
         orgplatillos.inorden();
         orgplatillos.buscarportipoplatillo(2);
-       
-       
+
         //Organizacion de empleados 
         orgempleados.insertar(10, "Javier", 2);
         orgempleados.insertar(9, "Jose", 1);
@@ -80,11 +77,21 @@ public class ProyectoEstructurasDeDatos {
         orgempleados.insertar(16, "Joselyn", 3);
         orgempleados.insertar(6, "Johana", 2);
         orgempleados.insertar(5, "Daniel", 3);
-        
+
         orgempleados.inorden();
-        
+
         orgempleados.buscarporpuesto(3);
 
-    }
+        
+        System.out.println("\nBalance correspondiente a la produccion y ventas: \n");
+        //Instancia de la clase grafo balance
+        GrafoBalance grafoBalance = new GrafoBalance(listplatillos.getNumeroPlatillos());
+        
+        // Crear Nodos y aristas apartir los platillos ya existentes
+        grafoBalance.agregarNodos(listplatillos);
+        grafoBalance.agregarArista(0, 1);
 
+        // Mostrar resultado de balance
+        System.out.println(grafoBalance.toString());
+    }
 }

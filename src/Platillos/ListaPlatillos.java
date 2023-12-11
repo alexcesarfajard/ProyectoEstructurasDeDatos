@@ -5,6 +5,22 @@ public class ListaPlatillos {
     private NodoPlatillos cabeza;
     private NodoPlatillos ultimo;
 
+    public NodoPlatillos getCabeza() {
+        return cabeza;
+    }
+
+    public int getNumeroPlatillos() {
+        int contador = 0;
+        NodoPlatillos temp = cabeza;
+
+        do {
+            contador++;
+            temp = temp.getNext();
+        } while (temp != cabeza);
+
+        return contador;
+    }
+
     public void insertaPlatillo(Platillos p) {
 
         if (cabeza == null) {
@@ -35,9 +51,8 @@ public class ListaPlatillos {
             }
         }
     }
-    
-    //Impresion sin Recursiva
 
+    //Impresion sin Recursiva
 //    public String toString() {
 //        String resp = "Lista circular\n\n";
 //
@@ -57,7 +72,6 @@ public class ListaPlatillos {
 //        
 //        return resp;
 //    }
-    
     //Impresion con Recursiva
     public String mostrarPlatillos() {
         return "Lista circular\n\n" + mostrarPlatillosRecursiva(cabeza, "");
