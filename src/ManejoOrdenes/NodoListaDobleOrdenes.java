@@ -1,18 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ManejoOrdenes;
-/**
- *
- * @author harly
- */
+
 public class NodoListaDobleOrdenes {
     
+    //atributos
     private ListaOrdenes dato;
     private NodoListaDobleOrdenes anterior;
     private NodoListaDobleOrdenes siguiente;
 
+    //constructores
     public NodoListaDobleOrdenes(ListaOrdenes dato) {
         this.dato = dato;
     }
@@ -21,6 +16,7 @@ public class NodoListaDobleOrdenes {
         return dato;
     }
 
+    //getter y setter
     public NodoListaDobleOrdenes getAnterior() {
         return anterior;
     }
@@ -41,10 +37,9 @@ public class NodoListaDobleOrdenes {
         this.siguiente = siguiente;
     }
 
-  
+    //to string
     public String toString() {
         return dato.toString();
     }
     
-    
-}
+} // fin de la clase nodo lista doble ordenes

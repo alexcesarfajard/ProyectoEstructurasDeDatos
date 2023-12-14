@@ -93,5 +93,7 @@ public class ProyectoEstructurasDeDatos {
 
         // Mostrar resultado de balance
         System.out.println(grafoBalance.toString());
-    }
-}
+        
+    } // fin de la clase main
+    
+} //fin de la clase ProyectoEstructurasDeDatos

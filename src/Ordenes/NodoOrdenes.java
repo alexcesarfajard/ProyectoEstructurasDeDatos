@@ -1,18 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Ordenes;
 
-/**
- *
- * @author Usuario
- */
 public class NodoOrdenes {
     
+    //atributos
     private String dato;
     private NodoOrdenes atras;
     
+    //constructores
     public NodoOrdenes(String dato){
         this.dato = dato;
     }
@@ -20,6 +14,7 @@ public class NodoOrdenes {
     public NodoOrdenes(){
     }
 
+    //getters y setters
     public String getDato() {
         return dato;
     }
@@ -36,9 +31,10 @@ public class NodoOrdenes {
         this.atras = atras;
     }
 
+    // to string
     @Override
     public String toString() {
         return dato;
     }
     
-}
+} // fin clase nodo ordenes

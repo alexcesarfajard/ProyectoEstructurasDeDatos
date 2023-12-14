@@ -1,27 +1,22 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package OrganizacionPlatillosEmpleados;
 
-/**
- *
- * @author Usuario
- */
 public class NodoOrgPlatillos {
 
+    //atributos
     private int id; //referencia del arbol
     private String nombre; // nombre platillo
     private int tipoComida; // tipo comida, 1 es desayuno, 2 es almuerzo y 3 es cena
     private NodoOrgPlatillos hijoizq; //referencia a una rama
     private NodoOrgPlatillos hijoder;// referencia a otra rama
 
+    //constructores
     public NodoOrgPlatillos(int id, String nombre, int tipoComida) {
         this.id = id;
         this.nombre = nombre;
         this.tipoComida = tipoComida;
     }
 
+    //getter y setter
     public int getId() {
         return id;
     }
@@ -62,4 +57,4 @@ public class NodoOrgPlatillos {
         this.hijoder = hijoder;
     }
 
-}
+} // fin de la clase nodo org platillos

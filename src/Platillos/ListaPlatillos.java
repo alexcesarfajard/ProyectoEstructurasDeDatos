@@ -72,6 +72,7 @@ public class ListaPlatillos {
 //        
 //        return resp;
 //    }
+    
     //Impresion con Recursiva
     public String mostrarPlatillos() {
         return "Lista circular\n\n" + mostrarPlatillosRecursiva(cabeza, "");
@@ -88,4 +89,5 @@ public class ListaPlatillos {
 
         return respuesta;
     }
-}
+    
+} // fin clase lista platillos

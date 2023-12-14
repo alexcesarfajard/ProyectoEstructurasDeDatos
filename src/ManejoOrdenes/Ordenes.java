@@ -1,19 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ManejoOrdenes;
 
-/**
- *
- * @author harly
- */
 public class Ordenes {
-    
+
     private NodoListaDobleOrdenes cabeza;
     private NodoListaDobleOrdenes ultimo;
-    
-     public void inserta(ListaOrdenes p) {
+
+    public void inserta(ListaOrdenes p) {
 
         if (cabeza == null) {
             cabeza = new NodoListaDobleOrdenes(p);
@@ -53,8 +45,7 @@ public class Ordenes {
         }
 
     }
-     
-     
+
     public String toString() {
         String respuesta = "Lista doble circular: \n";
 
@@ -73,5 +64,5 @@ public class Ordenes {
         }
         return respuesta;
     }
-    
-}
+
+} // fin clase ordenes

@@ -5,19 +5,20 @@ public class NodoEmpleados {
     private Empleados dato;
     private NodoEmpleados siguiente;
 
+    //constructores
     public NodoEmpleados(Empleados dato) {
         this.dato = dato;
     }
 
-
     public NodoEmpleados() {
-
     }
 
+    //to string
     public String toString() {
         return "Nodo { " + " Dato = " + dato + "}";
     }
 
+    //getter y setter
     public Empleados getDato() {
         return dato;
     }
@@ -34,4 +35,4 @@ public class NodoEmpleados {
         this.siguiente = siguiente;
     }
 
-}
+} // fin de la clase nodo empleados

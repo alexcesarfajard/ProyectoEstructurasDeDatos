@@ -1,12 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ManejoOrdenes;
-/**
- *
- * @author harly
- */
+
 public class ListaOrdenes {
 
     private int idOrdenes;
@@ -61,7 +54,5 @@ public class ListaOrdenes {
     public String toString() {
         return "ListaOrdenes { " + "idOrdenes = " + idOrdenes + ", nombreCliente = " + nombreCliente + ", platillo = " + platillo + ", monto = " + monto + '}';
     }
-    
-    
-    
-}
+
+} // fin de la clase lista ordenes

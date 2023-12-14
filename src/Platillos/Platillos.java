@@ -6,7 +6,8 @@ public class Platillos {
     private String nombre;
     private int gastoIngredientes;
     private int precio;
-
+    
+    //constructores
     public Platillos() {
     }
 
@@ -17,6 +18,7 @@ public class Platillos {
         this.precio = precio;
     }
 
+    //getter y setter
     public int getIdplatillo() {
         return idplatillo;
     }
@@ -49,10 +51,11 @@ public class Platillos {
         this.precio = precio;
     }
 
+    //to string
     @Override
     public String toString() {
         return "Platillo { " + "ID = " + idplatillo + ", nombre = " + nombre + 
                 ", Gasto ingredientes = " + gastoIngredientes + ", Precio = " + precio + " } ";
     }
 
-}
+} // fin clase platillos

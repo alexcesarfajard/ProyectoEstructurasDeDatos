@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Balances;
 
 import Platillos.*;
@@ -77,5 +73,5 @@ public class GrafoBalance {
         String respuesta = "Balance de ganancias, es de un total de: " + calcularBalance();
         return respuesta;
     }
-
-}
+    
+} // fin de la clase Grafo Balance
